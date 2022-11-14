@@ -1,0 +1,11 @@
+@import "./setup/variables";
+@import "./setup/base";
+@import "./setup/typography";
+@import "./setup/mixin";
+
+body {
+  min-height: 100vh;
+  font-family: "Kumbh-Sans";
+  font-weight: 400;
+  background-color: aqua;
+}

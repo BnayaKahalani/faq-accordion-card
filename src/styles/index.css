@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Kumbh-Sans";
+  src: url(../../assets/Kumbh/KumbhSans-VariableFont_wght.ttf);
+}
+body {
+  min-height: 100vh;
+  font-family: "Kumbh-Sans";
+  font-weight: 400;
+  background-color: aqua;
+}/*# sourceMappingURL=index.css.map */

@@ -7,5 +7,100 @@ body {
   min-height: 100vh;
   font-family: "Kumbh-Sans";
   font-weight: 400;
-  background-color: aqua;
+  background-image: linear-gradient($clr-soft-violet, $clr-soft-blue);
+  @include flex-column-center;
+}
+
+.faq {
+  position: relative;
+  @include flex-column-center;
+  background: $clr-white;
+  padding: 30px;
+  border-radius: 15px;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  &__img-container {
+    @include flex-column-center;
+    position: relative;
+    top: -120px;
+
+    @media (min-width: 1440px) {
+      position: relative;
+      top: 70px;
+      right: 70px;
+    }
+  }
+
+  &__main-img {
+    img {
+      max-width: 200px;
+    }
+
+    @media (min-width: 1440px) {
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+
+  &__shadow-img {
+    img {
+      max-width: 200px;
+      position: relative;
+      top: -200px;
+      right: 0;
+    }
+
+    @media (min-width: 1440px) {
+      img {
+        max-width: 300px;
+        top: -200px;
+      }
+    }
+  }
+
+  &__text-container {
+    @include flex-column-center;
+  }
+
+  &__questions-answers {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+
+    &>* {
+      padding: 10px 0;
+      border-bottom: solid 1px $clr-light-grayish-blue;
+      list-style-type: none;
+    }
+  }
+
+  &__question-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    font-size: 14px;
+    transition: 0.1s;
+
+    p {
+      margin: 10px 0;
+    }
+
+    &:hover {
+      color: $clr-soft-red;
+      cursor: pointer;
+    }
+  }
+
+  &__arrow-container {
+
+    img {
+      width: 15px;
+    }
+  }
 }

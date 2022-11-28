@@ -1,7 +1,23 @@
 //COLORS
-$clr-purple: rgb(170, 92, 219);
-$clr-deep-purple: rgb(27, 25, 56);
-$clr-dark-blue: rgb(9, 11, 26);
+
+//Primary - Text
+$clr-dark-blue: rgb(29, 30, 53);
+$clr-soft-red: rgb(244, 124, 87);
+
+//Primary - Gradient
+$clr-soft-violet: rgb(175, 103, 233);
+$clr-soft-blue: rgb(101, 101, 231);
+
+//Neutral - Text
+$clr-dark-grayish-blue: rgb(74, 75, 94);
+$clr-grayish-blue: rgb(120, 120, 135);
+
+//Dividers
+$clr-light-grayish-blue: rgb(231, 231, 233);
+
+//General
 $clr-white: rgb(255, 255, 255);
-$clr-transparent1: rgba(255, 255, 255, 0.75);
-$clr-transparent2: hsla(0, 0%, 100%, 0.6);
+
+//Layout
+
+$desktop-layout: 1440px;

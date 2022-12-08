@@ -9,29 +9,34 @@ body {
   font-weight: 400;
   background-image: linear-gradient($clr-soft-violet, $clr-soft-blue);
   @include flex-column-center;
+  margin: 0 min(16px);
 }
 
 .faq {
   position: relative;
   @include flex-column-center;
   background: $clr-white;
-  padding: 30px;
+  padding: 30px 30px 20px 30px;
   border-radius: 15px;
+  height: 550px;
+
 
   @media (min-width: 1440px) {
+    height: 435px;
     flex-direction: row;
     overflow: hidden;
+    padding: 50px 30px 50px 30px;
   }
 
   &__img-container {
     @include flex-column-center;
-    position: relative;
-    top: -120px;
+    position: absolute;
+    top: -90px;
 
     @media (min-width: 1440px) {
       position: relative;
-      top: 70px;
-      right: 70px;
+      top: -20px;
+      right: 100px;
     }
   }
 
@@ -41,30 +46,54 @@ body {
     }
 
     @media (min-width: 1440px) {
+      z-index: 10;
+
       img {
-        max-width: 300px;
+        max-width: 400px;
       }
     }
   }
 
+  &__box-img {
+
+    img {
+      z-index: 20;
+      position: relative;
+      max-width: 150px;
+      top: 315px;
+      left: -75px;
+    }
+  }
+
   &__shadow-img {
+    position: absolute;
+    top: 90px;
+
     img {
       max-width: 200px;
       position: relative;
-      top: -200px;
-      right: 0;
     }
 
     @media (min-width: 1440px) {
       img {
-        max-width: 300px;
-        top: -200px;
+        min-width: 650px;
+        top: -290px;
+        right: 130px;
       }
     }
   }
 
   &__text-container {
+    margin-top: 50px;
     @include flex-column-center;
+
+    @media (min-width: 1440px) {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+    }
   }
 
   &__questions-answers {
@@ -102,5 +131,9 @@ body {
     img {
       width: 15px;
     }
+  }
+
+  &__a {
+    color: $clr-grayish-blue;
   }
 }

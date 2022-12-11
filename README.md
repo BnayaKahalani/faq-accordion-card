@@ -2,6 +2,8 @@
 
 The challenge was to build out a responsive FAQ accordion card and get it looking as close to the provided design as possible.
 
+[Click here to see the result.](https://bnayakahalani.github.io/faq-accordion-card/)
+
 Tools I used: React & Sass. 
 
 Here are some photos of the final product:
